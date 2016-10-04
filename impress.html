@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>impress 幻灯片</title>
+<link rel="stylesheet" type="text/css" href="css/impress.css">
+</head>
+<body>
+<div class="impress-not-supported">
+	<div class="fallback-message">
+		<p>
+			你的浏览器<b>不支持</b> impress.js, 所以当前展示的是简化版。
+		</p>
+		<p>
+			为了获得更好的体验，请使用最新的 <b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b> 浏览器。
+		</p>
+	</div>
+</div>
+<div id="impress">
+	<div class="step 1 wrap" data-x="-695" data-y="-695">
+		<iframe src="https://corner1990.github.io/newstart/" style="margin-left: 195px;" height="600" width="800">
+		</iframe>
+	</div>
+	<div class="step 2 wrap" data-x="695" data-y="-695">
+		<iframe src="https://corner1990.github.io/move-list" style="margin-left: 195px;" height="600" width="800">
+		</iframe>
+	</div>
+	<div class="step 3 one wrap" data-x="0" data-y="0">
+		<h2 class="one-title-mian">仿webAPP 实现单一页面跳转</h2>
+		<h3 class="one-title-small">分享人： 李兴龙</h3>
+	</div>
+	<div class="step 4 two wrap" data-x="-1800" data-y="-400" data-rotate="270" data-rotate-x="30" data-rotate-y="-30">
+		<h2 class="two-title-main">一. 实现基本的数据绑定</h2>
+		<h2 class="two-title-main">二. 实现单一页面跳转</h2>
+		<h3 class="two-title-small">需要掌握的知识点：</h3>
+		<p>
+			a.HTML基础
+		</p>
+		<p>
+			d.CSS基础
+		</p>
+		<p>
+			c.javascript基础
+		</p>
+		<p>
+			b.ng 的基本API
+		</p>
+	</div>
+	<div class="step 5 three wrap" data-x="0" data-y="-1400">
+		<h2>MVC组成</h2>
+		<p>
+			模&nbsp;&nbsp;&nbsp;&nbsp;型&nbsp;&nbsp;&nbsp;处理数据和业务逻辑
+		</p>
+		<p>
+			视&nbsp;&nbsp;&nbsp;&nbsp;图&nbsp;&nbsp;&nbsp;以友好的的方式向用户展示数据
+		</p>
+		<p>
+			控制器&nbsp;&nbsp;&nbsp;组织调度信啊感应的处理模块
+		</p>
+	</div>
+	<div class="step 6 four wrap" data-x="1780" data-y="-600" data-rotate="90">
+		<h2>模块（Module）</h2>
+		<p>
+			angularJs很重要的一个特性就是模块化编程，我们可以通过一下的方式创建一个模块，对页面进行业务功能上的划分；
+		</p>
+		<p>
+			var myApp=angular.module('myApp',[]);
+		</p>
+		<p>
+			提示：必须指定第二个参数，否则变成找到已定义好的模块
+		</p>
+	</div>
+	<div class="step 7 wrap" data-x="1400" data-y="800" data-rotate="90" data-rotate-x="-80" data-rotate-y="90">
+		<h2>控制器</h2>
+		<p>
+			主要有三种原则：
+		</p>
+		<p>
+			为应用中的模型设置出事状态
+		</p>
+		<p>
+			通过$scope对象把数据模型或函数行为暴露给视图
+		</p>
+		<p>
+			监视模型变化，做出相应的动作
+		</p>
+	</div>
+	<div class="step 8 wrap" data-x="-1680" data-y="1190" data-rotate="270">
+		<p>
+			由于控制器必须出现在某个模块下，想创建一个控制器，必须先创建一个模块
+		</p>
+		<p>
+			var myApp=angular.module('myApp',[]);
+		</p>
+		<p>
+			var moduleContorller= angular.module('myModuleController',['$scope',function($scope){ //do something... }]);
+		</p>
+	</div>
+	<div class="step 9 wrap" data-x="-200" data-y="1000" data-rotate-x="30" data-rotate-y="-30" data-rotate-z="190" data-scale="2">
+		<h2>ng中路由模块是单独提供的</h2>
+		<p>
+			1.ngRute 也是一个单独发型的文件 需要自己单独下载
+		</p>
+		<p>
+			2.在自己的模块中 添加ng-rute的依赖
+		</p>
+		<p>
+			3.路由配置(配置路由规则)
+		</p>
+		<p>
+			4.xx样的请求，找xx控制器
+		</p>
+	</div>
+	<div class="step 10 wrap" data-x="1200" data-y="-2000" data-rotate-x="60" data-rotate-y="-30" data-rotate-z="90" data-scale="2">
+		<p>
+			"//code.angularjs.org/X.Y.Z/angular-route.js"
+		</p>
+		<p>
+			链入第三方cdn文件的时候 不写请求协议的时候，请求协议的时候更具网站的协议发起请求 自动匹配http请求或者https编写对应的控制器和视图
+		</p>
+	</div>
+	<div class="step 11 wrap ft" data-x="-1900" data-y="-1700" data-rotate-x="30" data-rotate-y="-30" data-rotate-z="90" data-scale="1">
+		<p>
+			var myApp = angular.module('MyTodoMvc',['ngRoute']);<br>
+			// 路由的配置<br>
+			myApp.config(['$routeProvider',function($routeProvider){<br>
+			myApp.config(['$routeProvider',function($routeProvider){<br>
+			$routeProvider<br>
+			.when('/:status',{<br>
+			controller: 'MainController',<br>
+			templateUrl:'mainTemplate'<br>
+			})<br>
+			.otherwise({ redirectTo: '/' });<br>
+			}]);<br>
+			myApp.controller('hello',['$scope','$routeParms',function('$scope','$routeParms<br>
+			'){<br>
+			do something....<br>
+			}])
+		</p>
+	</div>
+	<div class="step 12 wrap" data-x="-12660" data-y="0" data-rotate-x="30" data-rotate-y="-30" data-rotate-z="90" data-scale="4">
+		<h2 class="thinks">谢谢大家！</h2>
+	</div>
+	<div id="overview" class="step" data-x="-1000" data-y="-500" data-scale="5">
+	</div>
+</div>
+<script src="js/impress.js"></script>
+<script>
+		impress().init();
+	</script>
+</body>
+</html>
