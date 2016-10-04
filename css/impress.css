@@ -93,7 +93,7 @@ body {
     background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));*/
-    background: url(/res/img/demo01/impress-bg.jpg) no-repeat center; 
+    background: url(../img/impress-bg.jpg) no-repeat center; 
 }
 
 /*
